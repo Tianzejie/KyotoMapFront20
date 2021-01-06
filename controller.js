@@ -49,7 +49,6 @@ function initMap() {
       const image ="https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
 
       for (var i=0;i<locations.length;i++){
-
         const location=locations[i];
 
         marker=new google.maps.Marker({
