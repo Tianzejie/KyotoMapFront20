@@ -15,21 +15,21 @@
 </div>
 <div class="wrapper">
 
- <nav id="sidebar">
+ <nav id="sidebar">	
   	 <ul class="lisst-unstyled components">
 	 	<li class="active">
  	 		<a href="#categoriesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="background-image: url(images/menu-bg.png);">Categories</a>
  	 	  	<ul class="collapse list-unstyled" id="categoriesSubmenu">
 			<label class="container">
-				<input type="checkbox" id="nature"> Nature
+				<input type="checkbox" id="nature"> Nature 
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" id="temples">
+			<label class="container">
 				<input type="checkbox"> Temples
 				<span class="checkmark"></span>
 			</label>
 			<label class="container">
-				<input type="checkbox"> Shrines
+				<input type="checkbox"> Shrines 
 				<span class="checkmark"></span>
 			</label>
 			<label class="container">
@@ -49,26 +49,26 @@
 				<span class="checkmark"></span>
 			</label>
 			<label class="container">
-				<input type="checkbox"> Hospital
+				<input type="checkbox"> Hospital 
 				<span class="checkmark"></span>
 			</label>
 			<label class="container">
-				<input type="checkbox"> Shopping
+				<input type="checkbox"> Shopping 
 				<span class="checkmark"></span>
 			</label>
 			<label class="container">
-				<input type="checkbox"> Stations
+				<input type="checkbox"> Stations 
 				<span class="checkmark"></span>
 			</label>
 			<label class="container">
-				<input type="checkbox"> Others
+				<input type="checkbox"> Others 
 				<span class="checkmark"></span>
 			</label>
 		  </li>
   	 </ul>
  	 	<li>
  	 		<a href="#">List</a>
-		</li>
+		</li> 		
 		<li class="active">
 			<a href="#routeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="background-image: url(images/menu-bg.png);">Route</a>
 			<ul class="collapse list-unstyled" id="routeSubmenu" >
@@ -82,7 +82,7 @@
 				  </div>
 				  <button type="button" id="searchRoute" class="btn btn-danger" style="margin-left: 10px;">Search</button>
 			</ul>
-  		</li>
+  		</li>		  
 	 	</ul>
  	 	</li>
 	 </ul>
@@ -90,13 +90,15 @@
 
 <div id="content">
 <div class="container-fluid" id="map" ></div>
-	<script
-		defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_ICVQ_9WSGmCNzNhrNfDmHAHGosH-4f0&callback=initMap&libraries=&v=weekly">
+	<script 
+		defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqcGUGCfHIqX1IvjHx_ul26MRvdr_3T8Y&callback=initMap&libraries=&v=weekly">
 	</script>
 	<button type="button" id="tyaExample" class="btn btn-danger" style="">Hello Tyan</button>
+	<button type="button" id="tyaExample" class="btn btn-danger" style="">Hello Tyan</button>
+
 
 </div>
-<button type="button" id="T" class="btn btn-danger" style="">T</button>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -105,7 +107,7 @@
 		$("#searchbutton").click(function(){
 	 		$.get('https://kyoto-map-20.herokuapp.com', function(data, status){
 			 $("#searchbutton").html(data);
-			 alert(status)
+			 alert(status)	
 	 })
 });
 });
